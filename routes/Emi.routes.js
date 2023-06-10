@@ -25,7 +25,8 @@ emiRoutes.post("/calculate", async (req, res) => {
   console.log('userEmi',userEmi);
   console.log('emi',emi);
 
-  res.status(200).send("emi is", emi);
+//   res.status(200).send("emi is", emi.toString());
+  res.status(200).send(`emi is, ${userEmi.toString()}`);
 });
 
 
